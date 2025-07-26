@@ -1,53 +1,109 @@
-# Python Couse Assignment One 
-Welcome to Python Course Assignment One. As you have completed the milestone one, that means you are familier with the python basic. This assignment helps you to grow your confidennce 
+# Travel Memories Website
 
-## What you need to do? 
+A beautiful, modern travel website for uploading and sharing your travel videos, photos, and stories. Built with a stunning UI inspired by Cursor's design language.
 
-1. *Step-1*: You need to clone this repository first. You can clone the repository by following command
+## Features
 
-```code
-git clone https://github.com/aouwalitshikkha/mobile-post-data.git
+- **Photo Upload**: Upload and organize your travel photos with drag & drop
+- **Video Sharing**: Share your adventure videos with smooth playback
+- **Story Writing**: Write detailed travel journals and stories
+- **Modern UI**: Beautiful glassmorphism design with smooth animations
+- **Responsive**: Works perfectly on all devices
+- **Dark Theme**: Eye-friendly dark interface with gradient accents
+- **Interactive**: Hover effects, smooth transitions, and engaging animations
+
+## Tech Stack
+
+- **Next.js 14** - React framework for production
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations and transitions
+- **React Dropzone** - Drag and drop file uploads
+- **Lucide React** - Beautiful icons
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Install dependencies:
+```bash
+npm install
 ```
 
-2. Open it in your favorite IDE e.g. PyCharm, VS Code etc.
-3. Here you will get three files
-
-### Task One 
-1. Open <code>mobile.py</code>.
-2. You will get a varibale named <code>mobile_data</code>. You don't need to edit it.
-3. At the end of the page you will get a comment where you can start code 
-4. Make a template using the dictionary data.  
-5. Your Template must have at least two sentences. 
-6. USD must be converted to BDT
-6. example Output: 
-
-```code
-Xiaomi Note 5 is made in China. The price is 300 USD which is almost equal to 30975 BDT
-
+2. Run the development server:
+```bash
+npm run dev
 ```
 
-# Task Two
-1. Open <code>post data.py</code>.
-2. You will get a list of dictionaries. You don't need to edit it.
-3. At the end of the page you will get a comment where you can start code 
-4. Add slug field to all the post 
-5. We will test it by calling with random number e.g post_data[4]
-6. Expected Output: 
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-```code
-{
-    'userId': 'Alex Gates',
-     'id': 5, 
-     'title': ' nesciunt quas odio', 
-     'body': 'repudiandae veniam quaerat sunt sed.....', 
-     'slug': '-nesciunt-quas-odio'
-}
+## Usage
+
+### Uploading Content
+
+1. **Photos**: Navigate to the Upload section and select "Photos" tab. Drag and drop your images or click to browse.
+
+2. **Videos**: Switch to the "Videos" tab and upload your travel videos in MP4, MOV, AVI, or MKV format.
+
+3. **Stories**: Use the "Stories" tab to write detailed travel journals and experiences.
+
+4. **Add Details**: For each upload, you can add:
+   - Location where the content was captured
+   - Date of the experience
+   - Tags for easy searching
+
+### Viewing Memories
+
+- Browse all your uploaded content in the "Memories" section
+- Filter by content type (All, Photos, Videos, Stories)
+- Click on any memory to view it in detail
+- Interact with likes, comments, and sharing features
+
+## Customization
+
+### Styling
+
+The website uses Tailwind CSS with custom color schemes and animations. You can customize:
+
+- **Colors**: Edit the color palette in `tailwind.config.js`
+- **Animations**: Modify or add new animations in the same file
+- **Components**: Each component is in the `app/components/` directory
+
+### Adding Features
+
+- **Backend Integration**: Connect to your preferred backend service
+- **Database**: Add persistent storage for uploads
+- **Authentication**: Implement user accounts and login
+- **Cloud Storage**: Integrate with AWS S3, Cloudinary, or similar services
+
+## File Structure
+
 ```
-## For bonus
-1. make the slug limited to 3 words
-2. Make variation of the templates of mobile data
+travel-memories/
+├── app/
+│   ├── components/
+│   │   ├── Navigation.tsx
+│   │   ├── Hero.tsx
+│   │   ├── UploadSection.tsx
+│   │   └── MemoryGrid.tsx
+│   ├── providers/
+│   │   └── theme-provider.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+```
 
-## Take Care of 
-1. Variable name must be meaningfull
-2. Commit at least 2 times in github
+## License
+
+This project is licensed under the MIT License.
 
