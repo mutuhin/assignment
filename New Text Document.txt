@@ -1,9 +1,0 @@
-#####NoneType object convert to string######
-https://github.com/meher09/complex-data-assignment?fbclid=IwAR2jakGOB_cTPOi8QJ-ZTG1mIkQgXVFH4EwOaT-jrQDSTsEi_HDbVYK8x1E
-my_var = None
-
-result_1 = my_var or ''
-print(result_1)  # 👉️ ""
-
-result_2 = my_var or 'hello'
-print(result_2)  # 👉️ "hello"
